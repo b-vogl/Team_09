@@ -22,6 +22,12 @@
         <action
             android:id="@+id/action_FragmentShowSubgroups_to_FragmentMessageThreads"
             app:destination="@id/FragmentMessageThreads" />
+        <action
+            android:id="@+id/action_FragmentShowSubgroups_to_FragmentAddNewsgroup"
+            app:destination="@id/FragmentAddNewsgroup" />
+        <action
+            android:id="@+id/action_FragmentShowSubgroups_self"
+            app:destination="@id/FragmentShowSubgroups" />
     </fragment>
     <fragment
         android:id="@+id/FragmentEditNewsgroup"
@@ -98,6 +104,9 @@
         android:name="com.tugraz.asd.modernnewsgroupapp.FragmentCreateThread"
         android:label="Create Thread"
         tools:layout="@layout/fragment_create_thread">
+        <action
+            android:id="@+id/action_FragmentCreateThread_to_FragmentMessageThreads"
+            app:destination="@id/FragmentMessageThreads" />
     </fragment>
     <fragment
         android:id="@+id/fragmentOpenThread"
